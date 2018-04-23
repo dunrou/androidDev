@@ -1,0 +1,14 @@
+1. 当需要在onSaveInstance(Bundle)之后，进行fragment transaction:
+1）commitNowAllowingStateLoss():FragnmentTranscation.
+2) 使用handler.postDelayed(new Runnable{}, delay).
+第二种实现的可能性较高。
+
+2. 当使用Mpermission时，仅使用@PermissionDenied @PermissionGrant
+   即可。
+
+3. Gson可以解析少于服务器发来的信息，却不能接受多余服务器发来的token。
+
+4. 虽然已depreciated, 但android:password = "true"
+   能方便实现密码输入
+
+
