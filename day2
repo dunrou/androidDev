@@ -1,0 +1,7 @@
+1. 使用zxing时，图片尺寸相关于处理速度有较大的关系
+ps. 同时如果图片过大，或图片过小，则会发生处理错误。
+    图片压缩设置为options.inSampleSize。
+
+2. progressDialog, 还是只能在oncreate的时候创建，否则会出fatal error。
+
+ps. zxing摄像时处理速度还待解决。
